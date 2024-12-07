@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="mdb.css">
+</head>
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slider_one.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="slider_two.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="slider_three.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="mdb.js"></script>
+    <script>
+        $('.carousel').carousel({
+  interval: 2000
+})
+    </script>
+</body>
+</html>
+
+<!-- Carousel container element with id and class attributes -->
+<!-- data-ride attribute is used to enable carousel functionality -->
+<!-- Carousel indicators element to display navigation dots -->
+<!-- data-target attribute is used to specify the carousel element to control -->
+<!-- data-slide-to attribute is used to specify the slide to navigate to -->
+<!-- active class is used to specify the current slide -->
+<!-- Carousel inner element to wrap the carousel slides -->
+<!-- Carousel item element to define a single slide -->
+<!-- active class is used to specify the current slide -->
+<!-- d-block class is used to display the image as a block-level element -->
+<!-- w-100 class is used to set the width of the image to 100% -->
+<!-- alt attribute is used to specify the alternate text for the image -->
+<!-- jQuery, Popper, Bootstrap, and MDB JavaScript files are linked at the end to enable Bootstrap functionality -->
+<!-- Custom JavaScript code is used to initialize the carousel and set the interval between slides -->
